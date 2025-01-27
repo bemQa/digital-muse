@@ -1457,6 +1457,11 @@ input ~ span.error {
         height: 16rem;
     }
 
+    .lang-switch label::before {
+        left: -115%;
+        width: 80rem;
+    }
+
     .lang-switch label::after {
         height: 10rem;
         width: 10rem;
