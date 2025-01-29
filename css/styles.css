@@ -470,10 +470,10 @@ h5,
 
 .container {
     position: relative;
-    max-width: 1750rem;
+    /* max-width: 1750rem; */
     width: 100%;
     margin: 0 auto;
-    padding: 0 15rem;
+    padding: 0 100rem;
 }
 
 .header {
@@ -495,10 +495,10 @@ h5,
     display: flex;
     justify-content: space-between;
     gap: 0 40rem;
-    max-width: 1750rem;
+    /* max-width: 1750rem; */
     width: 100%;
     margin: 0 auto;
-    padding: 0 15rem;
+    padding: 0 100rem;
     z-index: 11;
 }
 
@@ -668,10 +668,10 @@ h5,
 }
 
 .footer-container {
-    max-width: 1750rem;
+    /* max-width: 1750rem; */
     width: 100%;
     margin: 0 auto;
-    padding: 0 15rem;
+    padding: 0 100rem;
 }
 
 .footer-copyright {
@@ -1393,6 +1393,12 @@ input ~ span.error {
         font-size: 18rem;
     }
     /* end typography */
+
+    .header-container,
+    .container,
+    .footer-container {
+        padding: 0 15rem;
+    }
 
     .btn {
         font-size: 16rem;
