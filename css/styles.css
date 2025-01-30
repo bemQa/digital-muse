@@ -1174,9 +1174,12 @@ input ~ span.error {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-width: 110rem;
+    /* min-width: 110rem;
     width: 110rem;
-    height: 36rem;
+    height: 36rem; */
+    min-width: 130rem;
+    width: 130rem;
+    height: 50rem;
 }
 
 .logo-element img {
