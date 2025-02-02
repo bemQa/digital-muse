@@ -155,38 +155,27 @@ $(document).ready(function () {
     }
 
     // slider
-    const text_page_slider = new Swiper('.text-page-slider', {
-        slidesPerView: 1,
-        loop: true,
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-        },
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
-    });
-
-    // const product_slider_navs = new Swiper(".text-page-slider-navs", {
-    //     slidesPerView: 4,
-    //     loop: true,
-    //     freeMode: true,
-    //     watchSlidesProgress: true,
-    //     grabCursor: true,
-    // });
-    // const product_slider = new Swiper(".text-page-slider", {
-    //     slidesPerView: 'auto',
-    //     loop: true,
-    //     spaceBetween: 8,
-    //     thumbs: {
-    //         swiper: product_slider_navs,
-    //     },
-    //     breakpoints: {
-    //         481: {
-    //             direction: "vertical",
-    //             spaceBetween: 16,
-    //         },
-    //     },
-    // });
+    if (!$('.case-content').length) {
+        const text_page_slider_navs = new Swiper(".text-page-slider-navs", {
+            slidesPerView: 5,
+            loop: true,
+            spaceBetween: 10,
+            freeMode: true,
+            watchSlidesProgress: true,
+            grabCursor: true,
+        });
+        const text_page_slider = new Swiper(".text-page-slider", {
+            slidesPerView: 'auto',
+            loop: true,
+            spaceBetween: 5,
+            thumbs: {
+                swiper: text_page_slider_navs,
+            },
+            breakpoints: {
+                481: {
+                    spaceBetween: 10,
+                },
+            },
+        });
+    }
 });
